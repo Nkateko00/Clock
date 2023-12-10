@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Tektur&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --bgcolor:  #1f242d;
+    --text-color:  #fff;
+    --second-bg-color: #323946;
+
+}
+body, .wrapper, .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+body{
+    min-height: 100vh;
+    background: var(--bgcolor);
+
+}
+.wrapper{
+    width: 440px;
+    background: var(--second-bg-color);
+    padding: 30px 30px 38px;
+    border-radius: 10px;
+    flex-direction: column;
+    background: var(--bgcolor);
+    /* background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0); */
+    cursor: default;
+    animation: animate 1.5s linear infinite;
+}
+.wrapper img{
+    max-width: 130px;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+.wrapper h1{
+    font-size: 38px;
+    font-weight: 500px;
+    margin: 30px 0;
+    color: var(--text-color);
+    padding-right: 20px;
+    padding-left: 20px;
+    letter-spacing: .1rem;
+    background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+    border-radius: 10px;
+    cursor: default;
+    animation: animate 1.5s linear infinite;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Tektur', cursive;
+  
+}
+.dateTime{
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 3px;
+    padding-top: 35px;
+    color: var(--text-color);
+    -webkit-box-reflect: below 1px linear-gradient(transparent,rgba(255,255,255,0.1));
+}
+/* .daytime :hover{
+    background: #2E94E3;
+    box-sizing: 0 0 30px #2E94E3;
+
+} */
+.content{
+    width: 100%;
+    justify-content: space-between;
+}
+.content .column{
+    border-radius: 5px;
+    border: 1px solid #999;
+    width: calc(100% / 3 - 5px);
+}
+.column select{
+    outline: none;
+    border: none;
+    height: 53px;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 500;
+    background: var(--bgcolor);
+    color: var(--text-color);
+    border-radius: 10px;
+}
+.wrapper button{
+    outline: none;
+    border: none;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 17px 0;
+    border-radius: 5px;
+    color: var(--text-color);
+    background: var(--bgcolor);
+    box-shadow: 0 0 1rem var(--second-bg-color);
+    font-size: 1.6rem;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+
+}
+
+@keyframes animate {
+    100%{
+        filter: hue-rotate(360deg);
+    }
+    
+}
